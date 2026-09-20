@@ -1,6 +1,8 @@
 # macOS
 .DS_Store
 **/.DS_Store
+
+# Python
 __pycache__/
 *.pyc
 *.pyo
@@ -11,21 +13,23 @@ venv/
 dist/
 .ipynb_checkpoints/
 
-# IDE / agent tooling (local)
+# IDE / local caches
 .vscode/
 .idea/
 .agents/
 .claude/
+scratch/
+output_test/
+*.tmp
 
-# Data / model caches
-data/*.gempy
-data/*.h5
-**/*.npy
+# Heavy model dumps (re-generated via GUI / engine)
+*.gempy
+*.h5
 
-# Keep synthetic CSV + demo figures; ignore other heavy dumps if added later
-scripts/geomap_demo/others/
-
-# Pipeline output runs (regenerated via scripts/10-15)
-data/output/geo2model/synth_*
-data/output/geo2model/real_map*
-data/output/geo2model/ui_session/
+# Sensitive application docs
+申报材料/
+*.docx
+*.pdf
+*.pptx
+*.zip
+gempy_doc/

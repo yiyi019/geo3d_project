@@ -1,0 +1,4 @@
+﻿unit_id,name,role,color_r,color_g,color_b,color_hex,n_pixels,area_percent,dip,azimuth
+0,strata_0,strata,151,174,210,#97AED2,685484,38.29,,
+1,strata_1,strata,224,189,206,#E0BDCE,666096,37.2,,
+2,strata_2,strata,198,198,198,#C6C6C6,438884,24.51,,

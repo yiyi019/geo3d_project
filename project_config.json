@@ -1,0 +1,40 @@
+{
+  "project_name": "LZU_Geology_MVP",
+  "extent": [
+    -200.0,
+    3500.0,
+    -150.0,
+    2300.0,
+    600.0,
+    1000.0
+  ],
+  "resolution": [
+    80,
+    80,
+    50
+  ],
+  "refinement": 6,
+  "surface_refinement": 6,
+  "octree_curvature_threshold": -1.0,
+  "surface_points_path": "/Users/yiyi/lzu/项目/my-MVP/surface_points.csv",
+  "orientations_path": "/Users/yiyi/lzu/项目/my-MVP/orientations.csv",
+  "series_mapping": {
+    "Fault_Series": "Fault_1",
+    "Strat_Series": [
+      "C",
+      "P"
+    ]
+  },
+  "fault_series": [
+    "Fault_Series"
+  ],
+  "topography": {
+    "mode": "file",
+    "filepath": "/Users/yiyi/lzu/项目/my-MVP/results/dem_auto.npy",
+    "params": {}
+  },
+  "meta": {
+    "preset_name": "🔬 科研出版 (80×80×50, 6) - 论文高清出图"
+  },
+  "timestamp": "2026-09-20 17:45:04"
+}

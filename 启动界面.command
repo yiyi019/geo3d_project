@@ -1,6 +1,11 @@
-#!/bin/zsh
-# geo2model 图形界面启动器 —— 双击即可（macOS）
-# 会在默认浏览器打开 http://127.0.0.1:7860
+#!/bin/bash
 cd "$(dirname "$0")"
-echo "正在启动 geo2model 界面（首次加载约 10 秒）…"
-exec .venv-gempy/bin/python app/geo2model_app.py
+
+# 优先使用配置好的 Conda 环境，否则回退至系统 Python3
+if [ -f "/opt/miniconda3/envs/py_course/bin/python" ]; then
+    /opt/miniconda3/envs/py_course/bin/python gui_app.py
+elif which python3 >/dev/null 2>&1; then
+    python3 gui_app.py
+else
+    python gui_app.py
+fi
